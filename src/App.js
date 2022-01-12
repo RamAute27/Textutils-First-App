@@ -2,17 +2,17 @@
 import './App.css';
 import Navebar from './components/Navebar';
 import TextForm from './components/TextForm';
-import About from './components/About';
+//import About from './components/About';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 
-import{
+{/*import{
   BrowserRouter as Router,
   Switch,
   Route,
   
 } from "react-router-dom";
-
+*/}
 
 
 function App() {
@@ -48,12 +48,12 @@ function App() {
     }
     return(
     <>
-    <Router>
+   { /*<outer>*/}
     
    <Navebar title="TextUtils" mode={mode} toggleMode={toggleMode} />
    <Alert alert={alert}/>
    <div className="container my-3">
-   <Switch>
+   {/*<Switch>
         
           <Route exact path="/about">
             <About/>
@@ -61,9 +61,9 @@ function App() {
           <Route exact path="/">
              <TextForm showAlert={showAlert} heading="Enter the text to analyze" mode={mode} />
           </Route>
-   </Switch>
+   </Switch>*/}
     </div>
-  </Router>
+ {/* </Router>*/}
    </>  
   
    
